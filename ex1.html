@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Image1</title>
+    <script>
+        function fun1()
+        {
+            document.cat.src="images/happy_cat.jpg"
+            var ele1 = document.getElementById("txt").innerHTML = "Before Exam";
+        }   
+        function fun2()
+        {
+            document.cat.src="images/sad_cat.jpg"
+            var ele1 = document.getElementById("txt").innerHTML = "After Exam";
+        }
+    </script>
+</head>
+<style>
+    
+</style>
+<body>
+    <div >
+        <!-- happy cat image display -->
+        <a onmouseover="fun2()" onmouseout="fun1()">
+            <img src="images/happy_cat.jpg" name="cat" style="height:500px ; width:500px;">
+        </a>
+    </div>
+    <div class="nothing" style="display: flex;">
+        <h1 id="txt">Before Exam</h1>
+    </div>
+</body>
+</html>

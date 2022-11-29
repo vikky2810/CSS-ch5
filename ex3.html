@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var mywin
+        function myfun(choice)
+        {
+            if(choice == 1)
+            {
+                document.fruit.src="images/mango.jpg"
+                mywin = window.open('','info',"style: height='500px' width='500px'")
+                mywin.document.write("Nothing To Write")
+            }
+            if(choice == 2)
+            {
+                document.fruit.src="images/orange.jpg"
+                mywin = window.open('','info',"style: height='500px' width='500px'")
+                mywin.document.write("I said Nothing to Write")
+            }
+            if(choice == 3)
+            {
+                document.fruit.src="images/banana.jpg"
+                mywin = window.open('','info',"style: height='500px' width='500px'")
+                mywin.document.write("Are you Coming Again..")
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="images/mango.jpg" alt="" name="fruit" style="height: 500px; width:500px;">
+    <a href="" onmouseover="myfun(1)" onmouseout="mywin.close()">
+        <h1>Mango</h1>
+    </a>
+    <a href="" onmouseover="myfun(2)" onmouseout="mywin.close()">
+        <h1>Orange</h1>
+    </a>
+    <a href="" onmouseover="myfun(3)" onmouseout="mywin.close()">
+        <h1>Banana</h1>
+    </a>
+</body>
+</html>
